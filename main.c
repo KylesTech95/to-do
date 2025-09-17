@@ -66,6 +66,7 @@
             length--;
             // reallocate tasks memory
             tasks = (Task *)realloc(tasks, (length * sizeof(Task)));
+            printf("task is deleted.\n");
         } else {
             printf("Invalid index\n");
         }
@@ -105,7 +106,7 @@
             printf("6. Exit\n");
 
         while (running){
-            printf("Enter choice(1,2,3,4,5,6): ");
+            printf("\nEnter choice(1,2,3,4,5,6): ");
             scanf("%d", &choice); // take input from user
 
             // switch statement
